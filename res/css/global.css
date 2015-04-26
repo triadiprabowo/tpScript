@@ -388,7 +388,10 @@ table {
 /* Home content & slider */
 .tp-slider-wrapper {
 	position: relative;
+	display: block;
 	box-shadow: inset 0px 0px 20px rgba(0,0,0,.3);
+	-webkit-transition: height 1s ease;
+	transition: height 1s ease;
 }
 
 .tp-slider-prev {
@@ -399,7 +402,6 @@ table {
 	color: #444;
 	font-size: 4em;
 	padding: 2.5em 0.35em;
-	height: 100%;
 	background: rgba(35,35,35, 0.1);
 	transition: all 0.2s ease-in-out;
 	-webkit-user-select: none;  /* Chrome all / Safari all */
@@ -425,7 +427,6 @@ table {
 	color: #444;
 	font-size: 4em;
 	padding: 2.5em 0.35em;
-	height: 100%;
 	background: rgba(35,35,35, 0.1);
 	transition: all 0.2s ease-in-out;
 	-webkit-user-select: none;  /* Chrome all / Safari all */
@@ -445,9 +446,10 @@ table {
 
 .tp-slider-content {	
 	position: relative;
-	display: inline-block;
+	display: block;
 	background-color: #101010;
-	width: 100%;	
+	width: 80%;	
+	margin: 0 auto;
 	text-align: center;
 	overflow: hidden;
 }
@@ -455,10 +457,10 @@ table {
 .tp-slider-content-inner {
 	padding: 2em;
 	position: relative;
-	top: 0;
 	margin: 0 auto 1em;
 	overflow: hidden;
 	display: inline-block;
+	vertical-align: top;
 }
 
 .tp-slider-content-inner h1,h2,h3,h4,h5,h6 {
@@ -502,7 +504,7 @@ table {
 }
 
 .tp-content-logo {
-	padding: 2em;
+	padding: 4em 0 2em;
 	position: relative;
 	display: inline-block;
 	margin: 0 auto;
@@ -616,7 +618,6 @@ input[type="button"].tp-btn-alt:active,
 }
 
 /* Footer */
-
 .tp-overall-footer {
 	position: relative;		
 	display: block;		

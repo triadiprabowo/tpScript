@@ -15,6 +15,8 @@
 		<link rel="shortcut icon" href="res/img/icon.png" />
 		<!-- CSS -->
 		<link rel="stylesheet" href="res/css/global.css" />
+		<!-- Include CSS for 404 page -->
+		<link rel="stylesheet" href="res/css/404.css">
 		<link rel="stylesheet" href="res/css/hover.css" />
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />		
 
@@ -27,11 +29,7 @@
 	</head>
 
 	<body>	
-	<!-- Include Header -->
-	<?php 
-		include('header.php');
-	?>
-	<!-- End Header -->
+	
 
 	<div ng-view></div>
 

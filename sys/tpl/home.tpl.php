@@ -1,4 +1,7 @@
-<?php include('../../init.script.php'); ?>
+<?php 	
+	include('../../init.script.php'); 
+	include('../../header.php');
+?>
 
 <!-- Homepage Contents -->
 <section class="tp-slider-wrapper">

@@ -214,6 +214,17 @@ tpApp.config(function($routeProvider, $locationProvider) {
 	when('/portfolio', {
 		templateUrl: 'sys/tpl/portfolio.tpl.php',
 		title: 'triadiprabowo.com | Portfolio'
+	}).
+	when('/contact', {
+		templateUrl: 'sys/tpl/contact.tpl.php',
+		title: 'triadiprabowo.com | Contact Me'
+	}).
+	when('/404', {
+		templateUrl: '404.php',
+		title: 'Whoops! Page Not Found'
+	}).
+	otherwise({
+		redirectTo: '/404'
 	});
 });
 

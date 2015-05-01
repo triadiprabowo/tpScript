@@ -1,0 +1,39 @@
+/*
+**	Child stylesheet
+**	Dependency: global.css
+**	Version: 1.0
+**	Page: 404.php
+**	Designed by Triadi Prabowo (me@triadiprabowo.com)
+*/
+
+.tp-pnf-wrapper {
+	width: 100%;	
+	position: absolute;
+	top: 20%;
+	left: 0;
+	display: block;
+	overflow: hidden;	
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+}
+
+.tp-pnf-img-left {
+	float: left;
+	margin-right: 3em;
+}
+
+.tp-pnf-content {
+	width: 70%;	
+	padding-left: 8%;
+	margin: 0 auto;
+}
+
+.tp-pnf-content-inner {
+	padding-top: 150px;
+}
+
+.tp-pnf-content-inner h1 {
+	line-height: 2em;
+}

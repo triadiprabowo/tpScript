@@ -389,7 +389,6 @@ table {
 .tp-slider-wrapper {
 	position: relative;
 	display: block;
-	box-shadow: inset 0px 0px 20px rgba(0,0,0,.3);
 	-webkit-transition: height 1s ease;
 	transition: height 1s ease;
 }
@@ -622,7 +621,9 @@ input[type="button"].tp-btn-alt:active,
 /* Footer */
 .tp-overall-footer {
 	position: relative;		
-	display: block;		
+	display: block;
+	width: 100%;
+	bottom: 0;		
 	zoom: 1;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;

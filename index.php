@@ -12,30 +12,27 @@
 		<meta name="robots" content="index,follow" />
 		<!-- Core -->
 		<title ng-bind="title"></title>
-		<link rel="shortcut icon" href="res/img/icon.png" />
+		<link rel="shortcut icon" href="res/img/icon.png">
 		<!-- CSS -->
-		<link rel="stylesheet" href="res/css/global.css" />
+		<link rel="stylesheet" href="res/css/global.css">
 		<!-- Include CSS for 404 page -->
 		<link rel="stylesheet" href="res/css/404.css">
-		<link rel="stylesheet" href="res/css/hover.css" />
-		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />		
-
-		<!-- Script Libraries -->
+		<!-- CSS Misc -->
+		<link rel="stylesheet" href="res/css/hover.css">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">		
+		<link rel="stylesheet" href="res/css/ngDialog.css">
+		<!-- Script Libraries -->				
 		<script src="res/js/jquery-1.10.2.js"></script>		
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 		<script src="res/js/angular.min.js"></script>
 		<script src="res/js/angular-route.min.js"></script>
-		<script src="res/js/tp-core.js"></script>
+		<script src="res/js/ngDialog.js"></script>
+		<script src="res/js/tp-ngcore.js"></script>
+		<script src="res/js/tp-controller.js"></script>
 	</head>
 
-	<body>	
-	
-
-	<div ng-view></div>
-
-	<!-- Include Footer Page -->
-	<?php
-		include('footer.php');
-	?>
+	<body ng-controller="globalCtrl">	
+		<!-- NgView -->
+		<div ng-view></div>
 	</body>
 </html>

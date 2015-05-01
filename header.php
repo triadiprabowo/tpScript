@@ -17,8 +17,8 @@
 						</ul>
 					</li>
 					<li><a href="portfolio">Portfolio</a></li>
-					<li><a href="resume.php">Resum&egrave;</a></li>
-					<li><a href="contact.php">Contact</a></li>
+					<li><a href="resume">Resum&egrave;</a></li>
+					<li><a href="javascript:void(0)" ng-click="showContactForm()">Contact</a></li>
 				</ul>
 			</section>
 		</section>

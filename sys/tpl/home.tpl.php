@@ -95,3 +95,8 @@
 		</p>
 	</section>
 </section>
+
+<!-- Include Footer Page -->
+<?php
+	include('../../footer.php');
+?>

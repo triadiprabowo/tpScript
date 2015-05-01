@@ -276,7 +276,11 @@ table {
 	margin: .15em;
 }
 
-/* Header */
+/* 
+** tpBootstrap
+** Styling => Header
+** Version 1.0 - Dark Theme
+*/
 .tp-overall-header {
 	position: relative;
 	width: 100%;
@@ -330,8 +334,11 @@ table {
 	color: #A80049;
 }
 
-/* Blocks */
-/*  COLUMN SETUP  */
+/* 
+** tpBootstrap
+** Column Setup && Grid
+** Version 1.0
+*/
 .col {
 	display: block;
 	float:left;
@@ -385,7 +392,13 @@ table {
 	background-color: rgba(24,24,24,0.25);
 }
 
-/* Home content & slider */
+/* 
+** $.tpSlider() jQuery Plugin
+** CSS Styling Version 1.0
+** Animation of Slider in tpScript Engine file
+** Designed by Triadi Prabowo
+** Version 1.0 - Dark Theme
+*/
 .tp-slider-wrapper {
 	position: relative;
 	display: block;
@@ -512,7 +525,12 @@ table {
 	overflow: hidden;
 }
 
-/* Content Inner */
+/* 
+** tpBootstrap
+** Styling => content block
+** Version 1.0
+** Dark Theme
+*/
 .tp-content-wrapper {
 	width: 100%;
 	position: relative;
@@ -541,7 +559,12 @@ table {
 	margin-bottom: 1.25em;
 }
 
-/* Button */
+/* 
+** tpBootstrap
+** Styling => button
+** Version 1.0
+** Type: tp-button (Normal), tp-button tp-alt (Alternative)
+*/
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
@@ -618,7 +641,12 @@ input[type="button"].tp-btn-alt:active,
 	box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.25), inset 0 0 5px rgba(0,0,0,.2);
 }
 
-/* Footer */
+/* 
+** tpBootstrap
+** Styling => Footer
+** Page: all
+** Version 1.0
+*/
 .tp-overall-footer {
 	position: relative;		
 	display: block;
@@ -649,9 +677,12 @@ input[type="button"].tp-btn-alt:active,
 	text-align: center;
 }
 
-/* tpBackTop() 
-.tp-backtop */
-
+/* 
+** $.tpBacktop() jQuery Plugin
+** CSS Styling Version 1.0
+** Size: Medium;
+** Designed by Triadi Prabowo
+*/
 #tp-backtop {
 	border-radius: 7px;
 	padding: 1em 1em 1em 1.25em;
@@ -675,7 +706,12 @@ input[type="button"].tp-btn-alt:active,
 	-o-user-select: none;
 }
 
-/* tp-clock */
+/*
+** $.tpClock() jQuery Plugin
+** CSS Styling Version 1.0
+** Size: Medium; Fixed-Position: Top;
+** Designed by Triadi Prabowo
+*/
 .tp-clock-wrapper {
 	display: block;
 	position: absolute;
@@ -691,4 +727,54 @@ input[type="button"].tp-btn-alt:active,
 	padding: 0;
 	margin: 0;
 	color: #fff;
+}
+
+/* 
+** AngularJS ngDialog Styling 
+** Version 1.0
+** Size: Medium, Large;
+** Designed by Triadi Prabowo
+*/
+.tp-modal-wrapper {
+	background: #111;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 16%;
+	-webkit-box-shadow: 2px 2px 1px 1px rgba(0,0,0,.4);
+	-moz-box-shadow: 2px 2px 1px 1px rgba(0,0,0,.4);
+	box-shadow: 2px 2px 1px 1px rgba(0,0,0,.4);
+}
+
+.tp-modal-wrapper.medium {
+	width: 70%;
+}
+
+.tp-modal-wrapper.large {
+	width: 90%;
+}
+
+.tp-modal-inner {
+	padding: 2em;
+}
+
+.tp-modal-content h1 {
+	font-size: 2.25em;
+	line-height: 2em;
+	border-bottom: 4px dashed #333;
+}
+
+.tp-modal-closeicon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 0 10px 0 10px;
+	min-width: 70px;
+	padding: .5em .5em .5em .75em;
+	background: #D8005D;
+	text-align: center;
+	color: #fff;
+	box-shadow: inset 0 0 13px rgba(0,0,0,.7);
 }

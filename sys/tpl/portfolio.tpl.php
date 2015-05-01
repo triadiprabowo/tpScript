@@ -102,3 +102,8 @@
 	<!-- Selector Slider -->
 	<div class="tp-slider-selector"></div>
 </section>
+
+<!-- Include Footer Page -->
+<?php
+	include('../../footer.php');
+?>

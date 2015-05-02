@@ -18,7 +18,7 @@ tpApp.controller('globalCtrl', function($scope, ngDialog) {
 
 	$scope.showContactForm = function() {
 		ngDialog.open({
-			template: 'http://localhost/triadiprabowo/sys/modal/modal_contact.php'
+			template: 'sys/modal/modal_contact.php'
 		});
 	}
 });

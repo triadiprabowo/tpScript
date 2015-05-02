@@ -505,6 +505,12 @@
                                 privateMethods.closeDialog($dialog, value);
                             };
 
+                            scope.refreshClose = function (value) {
+                                privateMethods.closeDialog($dialog, value);
+                                window.location.reload();
+                            };
+
+
                             $timeout(function () {
                                 var $activeDialogs = document.querySelectorAll('.ngdialog');
                                 privateMethods.deactivateAll($activeDialogs);

@@ -1,12 +1,15 @@
 <?php
-$form = mysql_escape_string($_POST['form']);
+$postdata = file_get_contents("php://input");
+$request = json_decode($postdata);
+
+$form = $request->form;
 
 if($form == "contact") {
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$subject = 'Contact Inquiry - '.$_POST['subject'];	
+	$name = $request->name;
+	$email = $request->email;
+	$subject = 'Contact Inquiry - '.$request->subject;	
 	$mail_to = 'me@triadiprabowo.com.com';
-	$message = $_POST['message'];	
+	$message = $request->message;	
 	
 	$body_message = '<html><body><font size="+3" style="color: #5ECCFF;"><b>Contact Inquiry</b></font>'."\r\n";
 	$body_message .= "<hr />\r\n";
@@ -20,6 +23,6 @@ if($form == "contact") {
 	$headers .= 'From: '.$email."\r\n";
 	$headers .= 'Reply-To: '.$email."\r\n";
 	
-	mail($mail_to, $subject, $body_message, $headers);
+	mail($mail_to, $subject, $body_message, $headers);	
 }
 ?>

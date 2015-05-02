@@ -30,14 +30,14 @@ tpApp.controller('globalCtrl', function($scope, $http, ngDialog) {
 					var emailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 					if(fn != undefined && email != undefined && subject != undefined && message != undefined) {
 						if(email.match(emailformat)) {
-							$http.post('sys/api/mail.php', {
+							$http.post('http://localhost/triadiprabowo/sys/api/mail.php', {
 								'form': 'contact',
 								'name': $scope.fullname,
 								'email': $scope.email,
 								'subject': $scope.subject,
 								'message': $scope.message
 							}).
-							success(function(result) {
+							success(function(data, status) {
 								ngDialog.open({
 									template: 'sys/modal/success.php?res=contact'
 								});

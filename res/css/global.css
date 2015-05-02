@@ -42,11 +42,11 @@ a:visited {
 }
 
 a:hover {
-	color: #FF006E;
+	color: #0092A5;
 }
 
 a:active {
-	color: #A80049;
+	color: #006F77;
 }
 
 /* Heading Tags */
@@ -105,11 +105,11 @@ h1 > a:visited, h2 > a:visited, h3 > a:visited, h4 > a:visited, h5 > a:visited, 
 }
 
 h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
-	color: #FF006E;
+	color: #0092A5;
 }
 
 h1 > a:active, h2 > a:active, h3 > a:active, h4 > a:active, h5 > a:active, h6 > a:active {
-	color: #A80049;
+	color: #006F77;
 }
 
 /* Paragraph */
@@ -134,11 +134,11 @@ p > a:visited {
 }
 
 p > a:hover {
-	color: #FF006E;
+	color: #0092A5;
 }
 
 p > a:active {
-	color: #A80049;
+	color: #006F77;
 }
 
 /* List */
@@ -168,11 +168,11 @@ li > a:visited {
 }
 
 li > a:hover {
-	color: #FF006E;
+	color: #0092A5;
 }
 
 li > a:active {
-	color: #A80049;
+	color: #006F77;
 }
 
 /* Misc */
@@ -327,11 +327,11 @@ table {
 }
 
 .tp-header li > a:hover {
-	color: #FF006E;
+	color: #0092A5;
 }
 
 .tp-header li > a:active {
-	color: #A80049;
+	color: #006F77;
 }
 
 /* 
@@ -510,11 +510,11 @@ table {
 }
 
 .tp-slider-selector-o.selected {
-	background: #E00061;
+	background: #005864;
 }
 
 .tp-slider-selector-o:hover {
-	background: #E00061;
+	background: #005864;
 }
 
 .tp-content-logo {
@@ -571,7 +571,7 @@ input[type="button"],
 .tp-button {
 	cursor: pointer;
 	border-radius: 7px;
-	background-color: #FF006E;
+	background-color: #005864;
 	color: #fff;
 	text-align: center;
 	line-height: 2em;
@@ -584,6 +584,7 @@ input[type="button"],
 	appearance: none;
 	transition: all 0.3s ease-in-out;
 	box-shadow: 1px 2px 1px 1px rgba(0,0,0,.25);
+	outline: 0;
 }
 
 input[type="submit"]:hover,
@@ -591,7 +592,7 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 .tp-button:hover {
 	color: #fff;
-	background-color: #CE0060;
+	background-color: #004851;
 }
 
 input[type="submit"]:active,
@@ -599,7 +600,7 @@ input[type="reset"]:active,
 input[type="button"]:active,
 .tp-button:active {
 	color: #fff;
-	background-color: #B70052;
+	background-color: #00393F;
 	box-shadow: 1px 2px 1px 1px rgba(0,0,0,.25), inset 0 0 10px rgba(0,0,0,.5);
 }
 
@@ -635,7 +636,7 @@ input[type="button"].tp-btn-alt:hover,
 input[type="submit"].tp-btn-alt:active,
 input[type="reset"].tp-btn-alt:active,
 input[type="button"].tp-btn-alt:active,
-.tp-button:active {
+.tp-button-alt:active {
 	color: #fff;
 	background-color: rgba(255,255,255,0.135);
 	box-shadow: 1px 2px 1px 1px rgba(0,0,0,0.25), inset 0 0 5px rgba(0,0,0,.2);
@@ -785,7 +786,7 @@ input[type="button"].tp-btn-alt:active,
 	border-radius: 0 10px 0 10px;
 	min-width: 70px;
 	padding: .5em .5em .5em .75em;
-	background: #D8005D;
+	background: #0092A5;
 	text-align: center;
 	color: #fff;
 	-webkit-transition: all 0.5s ease;
@@ -795,7 +796,7 @@ input[type="button"].tp-btn-alt:active,
 }
 
 .tp-modal-closeicon:hover {
-	background: #FF006E;	
+	background: #005864;	
 	-webkit-box-shadow: inset 0 0 13px rgba(0,0,0,.7);
 	-moz-box-shadow: inset 0 0 13px rgba(0,0,0,.7);
 	box-shadow: inset 0 0 13px rgba(0,0,0,.7);
@@ -829,7 +830,8 @@ input[type="button"].tp-btn-alt:active,
 ** Dark Theme
 */
 
-/*::-webkit-input-placeholder {
+/* Placeholder Text Color */
+::-webkit-input-placeholder {
    color: #777;
 }
 
@@ -843,11 +845,12 @@ input[type="button"].tp-btn-alt:active,
 
 :-ms-input-placeholder {  
    color: #777;  
-}*/
+}
 
+/* Default or Normal */
 input[type=text], 
 input[type=password], 
-input[type=reset], 
+input[type=email], 
 .tp-txtbox {
 	outline: 0;
 	border: 2px solid #111;
@@ -875,14 +878,114 @@ input[type=reset],
 
 input[type=text]:hover, 
 input[type=password]:hover, 
-input[type=reset]:hover, 
+input[type=email]:hover, 
 .tp-txtbox:hover {
 	border: 2px solid rgba(66,66,66,.325);
 }
 
 input[type=text]:focus, 
 input[type=password]:focus, 
-input[type=reset]:focus, 
+input[type=email]:focus, 
 .tp-txtbox:focus {
 	border: 2px solid rgba(60,60,60,.225);
+}
+
+/* Style 1 */
+input[type=text].nobg, 
+input[type=password].nobg, 
+input[type=email].nobg, 
+.tp-txtbox.nobg {
+	background: transparent;	
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	margin-top: -.5em;
+	border-bottom: 2px solid #333;
+	border-radius: 0;
+	box-shadow: none;	
+	padding: 1em 0;
+}
+
+input[type=text].nobg:hover, 
+input[type=password].nobg:hover, 
+input[type=email].nobg:hover, 
+.tp-txtbox.nobg:hover {
+	border-bottom: 2px solid #0092A5;	
+}
+
+input[type=text].nobg:focus, 
+input[type=password].nobg:focus, 
+input[type=email].nobg:focus, 
+.tp-txtbox.nobg:focus {
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	border-bottom: 2px solid #005864;
+}
+
+
+/*
+** tpBootstrap
+** Styling => Textarea
+** Version 1.0
+** Type: normal, nobg, alt;
+*/
+
+textarea, .tp-txtarea {
+	outline: 0;
+	border: 2px solid #111;
+	background: #222;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 1em;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-webkit-transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	transition: all 0.35s ease-in-out;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	margin: 0;
+	width: 100%; /* Textbox Size */
+	color: #999;
+	box-shadow: inset 0px 0px 20px rgba(0,0,0,.2);
+	margin-bottom: .35em;
+}
+
+textarea:hover, .tp-txtarea:hover {
+	border: 2px solid rgba(66,66,66,.325);
+}
+
+textarea:focus, .tp-txtarea:focus {
+	border: 2px solid rgba(60,60,60,.225);
+}
+
+textarea.nobg, .tp-txtarea.nobg {
+	background: transparent;
+	box-shadow: none;
+	border-left: 2px solid rgba(51,51,51,1);
+	border-top: transparent;
+	border-right: transparent;
+	border-bottom: 2px solid rgba(51,51,51,1);
+	border-radius: 0;
+	padding: .75em 1em 1em;
+	resize: none;
+}
+
+textarea.nobg:hover, .tp-txtarea.nobg:hover {
+	border-left: 2px solid rgba(0,146,165,.9);
+	border-top: transparent;
+	border-right: transparent;
+	border-bottom: 2px solid rgba(0,146,165,.9);
+}
+
+textarea.nobg:focus, .tp-txtarea.nobg:focus {
+	border-left: 2px solid rgba(0,88,100,.8);
+	border-top: transparent;
+	border-right: transparent;
+	border-bottom: 2px solid rgba(0,88,100,.8);
 }

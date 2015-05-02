@@ -9,7 +9,7 @@
 ** Released on http://triadiprabowo.com/
 */
 
-tpApp.controller('globalCtrl', function($scope, ngDialog) {
+tpApp.controller('globalCtrl', function($scope, $http, ngDialog) {
 	/*
 	** Function: Modal contact form
 	** Dependency: ngDialog
@@ -19,6 +19,20 @@ tpApp.controller('globalCtrl', function($scope, ngDialog) {
 	$scope.showContactForm = function() {
 		ngDialog.open({
 			template: 'sys/modal/modal_contact.php'
+		});
+	}
+
+	$scope.submitContact = function() {
+		$http.post('sys/api/mail.php', {
+			'form': 'contact',
+			'name': $scope.fullname,
+			'email': $scope.email,
+			'subject': $scope.subject,
+			'message': $scope.message
+		}).success(function(result) {
+			ngDialog.open({
+				template: 'sys/modal/success.php?res=contact'
+			});
 		});
 	}
 });

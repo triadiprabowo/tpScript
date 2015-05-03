@@ -30,7 +30,7 @@ $(document).ready(function() {
 
 	function tpSlider() {
 		var count = parseInt($('.tp-slider-content').length);
-		$('.tp-slider-content:first-child').addClass('tp-slide-current');
+		$('.tp-slider-content:first-child').show().addClass('tp-slide-current');
 		var index = parseInt($('.tp-slider-content.tp-slide-current').index());
 		// Hide except first child of slider content
 		$('.tp-slider-content:not(.tp-slide-current').hide();
@@ -38,7 +38,7 @@ $(document).ready(function() {
 		sliderSelector();
 		var selected = 0;
 
-		$('.tp-slider-next').click(function() {				
+		$('.tp-slider-next').click(function() {	
 			slideVar = "right";	
 
 			if(index + 1 < count) {
@@ -97,7 +97,7 @@ $(document).ready(function() {
 				// checkCurrentSlide
 				checkCurrentSlider();
 
-				selected = selected + 1;
+				selected = count - 1;
 				if(selected == index) {
 					$('.tp-slider-selector-o').removeClass('selected');
 					$('.tp-slider-selector-o:eq('+selected+')').addClass('selected');

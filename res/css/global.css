@@ -26,6 +26,21 @@ body {
 	height: 100%;
 }
 
+::-webkit-scrollbar {
+    width: 13px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.5); 
+    background: #333;
+}
+
 /* Hyperlink styling */
 a {
 	color: #6B6B6B;
@@ -247,7 +262,7 @@ table {
 */
 .tp-overall-header {
 	position: relative;
-	width: 100%;
+	width: 100% auto;
 	height: 50vh;
 	background-color: #101010;
 	background: url(../img/ohbg.png);
@@ -418,6 +433,7 @@ table {
 	display: block;
 	-webkit-transition: height 1s ease;
 	transition: height 1s ease;
+	overflow: hidden;
 }
 
 .tp-slider-prev {
@@ -480,6 +496,7 @@ table {
 	margin: 0 auto;
 	text-align: center;
 	overflow: hidden;
+	display: none;
 }
 
 .tp-slider-content-inner {

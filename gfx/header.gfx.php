@@ -6,7 +6,7 @@
 <script src="res/js/jquery.easing.1.3.js"></script>
 <script>
 	$(document).ready(function() {
-		var dly = 1000;
+		var dly = 800;
 
 		var imgList = [
 			{"src":"res/img/album/1.jpg"},

@@ -14,8 +14,6 @@ Under licensed of Creative Common Licence 4.0 International Non-Attribute
 /* Global Style Configuration */
 * {
 	-webkit-font-smoothing: antialiased;
-	-moz-font-smoothing: antialiased;
-	font-smoothing: antialiased;
 	margin: 0;
 	padding: 0;
 }
@@ -242,40 +240,6 @@ table {
 	margin-right: 0.35em;
 }
 
-/* Dropdown Menu */
-.tp-dropdown {
-	display: inline-block;
-}
-
-.tp-dropdown li {
-	display: inline-block;
-	list-style-type: none;
-	margin: .5em 1em;
-}
-
-.tp-dropdown li ul {
-	visibility: hidden;
-	background-color: rgba(38,38,38,0);
-	padding: .75em 0;
-	position: absolute;
-	z-index: 1;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-}
-
-.tp-dropdown li ul li {
-	display: block;
-	padding: .35em .2em;
-	color: rgba(136,136,136, 0);
-}
-
-.tp-dropdown li:hover ul {
-	visibility: visible;	
-	background-color: rgba(38,38,38,.8);
-	margin: .15em;
-}
-
 /* 
 ** tpBootstrap
 ** Styling => Header
@@ -284,22 +248,29 @@ table {
 .tp-overall-header {
 	position: relative;
 	width: 100%;
+	height: 50vh;
 	background-color: #101010;
 	background: url(../img/ohbg.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center bottom;
 	background-size: cover;
 	padding-bottom: 1em;
 	overflow: hidden;
-	-webkit-box-shadow: 0 2px 1px 2px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0 2px 1px 2px rgba(0,0,0,0.2);
-	box-shadow: 0 2px 1px 2px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 3px 1px 2px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0 3px 1px 2px rgba(0,0,0,0.25);
+	box-shadow: 0 3px 1px 2px rgba(0,0,0,0.25);
 	z-index: 2;
 }
 
 .tp-header {
+	position: relative;
+	z-index: 2;
 	width: 100%;
 	padding: 1em 0;
 	background-color: rgba(24,24,24,0.8);	
-	overflow: hidden;
+	display: inline-block;
+	clear: both;
 }
 
 .tp-header-lc {
@@ -332,6 +303,49 @@ table {
 
 .tp-header li > a:active {
 	color: #006F77;
+}
+
+.tp-gfx-viewer {	
+	position: relative;
+	width: 100vw;
+	padding: 2em 0;
+	z-index: 1;
+	display: block;
+	transition: all 0.2s ease-in-out;
+}
+
+/* Dropdown Menu */
+.tp-dropdown {
+	display: inline-block;
+}
+
+.tp-dropdown li {
+	display: inline-block;
+	list-style-type: none;
+	margin: .5em 1em;
+}
+
+.tp-dropdown li ul {
+	visibility: hidden;
+	background-color: rgba(38,38,38,0);
+	padding: .75em 0;
+	position: absolute;
+	z-index: 3;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.tp-dropdown li ul li {
+	display: block;
+	padding: .35em .2em;
+	color: rgba(136,136,136, 0);
+}
+
+.tp-dropdown li:hover ul {
+	visibility: visible;	
+	background-color: rgba(38,38,38,.8);
+	margin: .15em;
 }
 
 /* 
@@ -989,3 +1003,21 @@ textarea.nobg:focus, .tp-txtarea.nobg:focus {
 	border-right: transparent;
 	border-bottom: 2px solid rgba(0,88,100,.8);
 }
+
+/* 
+** tpBootstrap 
+** Hover Animation
+** Version 1.0 
+** Initial Build
+*/
+.tp-hvr-opacity {
+	opacity: 1;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-moz-transition: opacity 0.2s ease-in-out;
+	-o-transition: opacity 0.2s ease-in-out;
+	-ms-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
+}
+	.tp-hvr-opacity:hover {
+		opacity: .9;
+	}

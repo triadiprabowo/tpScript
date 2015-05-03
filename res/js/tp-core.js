@@ -7,6 +7,19 @@ $(document).ready(function() {
 	// Basic Required Method
 	tpSlider();
 	tpBackTop();
+	
+	/*$('.tp-blocks-description a').click(function() {
+		$('html body').animate({
+			scrollTop: $('#aboutme').offset().top
+		}, 750);
+
+	});*/
+
+	$(window).scroll( function() {  
+        if ( $(window).scrollTop() + $(window).height() >= $(document).height() - 200 ) {  
+           loadDiv3(); /* calls loadDiv3 Function below */  
+        }  
+    }); 
 
 	/* tpSlider.js 
 	Version 1.0 - Initial Build 

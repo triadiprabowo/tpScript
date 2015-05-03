@@ -8,7 +8,7 @@ if($form == "contact") {
 	$name = $request->name;
 	$email = $request->email;
 	$subject = 'Contact Inquiry - '.$request->subject;	
-	$mail_to = 'me@triadiprabowo.com.com';
+	$mail_to = 'me@triadiprabowo.com';
 	$message = $request->message;	
 	
 	$body_message = '<html><body><font size="+3" style="color: #5ECCFF;"><b>Contact Inquiry</b></font>'."\r\n";

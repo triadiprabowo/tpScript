@@ -14,7 +14,7 @@
 		<section class="tp-slider-content-inner">
 			<h1><span class="tp-icon fa-file"></span> tpScript Bootstrap</h1>
 			<p>Download latest version of cool 'tpScript' jQuery plugin & Bootstrap for your projects!<br /> Version 1.0 - Initial Build</p>
-			<a href="javascript:void(0)" class="tp-button"><span class="tp-icon fa-download"></span> Download</a> 
+			<a href="javascript:void(0)" class="tp-button"><span class="tp-icon fa-download"></span> Coming Soon</a> 
 			<a href="javascript:void(0)" class="tp-button tp-btn-alt"><span class="tp-icon fa-book"></span> Docs</a>
 		</section>
 	</section>
@@ -28,7 +28,7 @@
 		<section class="tp-slider-content-inner">
 			<h1><span class="tp-icon fa-file"></span> tpCSS Bootstrap</h1>
 			<p>Download latest version of Responsive CSS Bootstrap<br /> Version 1.0 - Initial Build</p>
-			<a href="javascript:void(0)" class="tp-button"><span class="tp-icon fa-download"></span> Download</a> 
+			<a href="javascript:void(0)" class="tp-button"><span class="tp-icon fa-download"></span> Coming Soon</a> 
 			<a href="javascript:void(0)" class="tp-button tp-btn-alt"><span class="tp-icon fa-book"></span> Docs</a>
 		</section>
 	</section>
@@ -48,7 +48,7 @@
 </section>
 
 <!-- Contents -->
-<section class="tp-content-wrapper">
+<section class="tp-content-wrapper" id="aboutme">
 	<section class="tp-content-inner">
 		<div class="floatleft">
 			<h2>Biography</h2>

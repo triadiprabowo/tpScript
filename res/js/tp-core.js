@@ -1,3 +1,7 @@
+$(window).load(function() {
+	$('.tp-preload').fadeIn("slow");
+});
+
 // Main Configuration of tpScript
 $(document).ready(function() {
 	$('.tp-header li > a:link').addClass('hvr-pop');

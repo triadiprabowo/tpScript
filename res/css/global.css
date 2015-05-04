@@ -263,7 +263,6 @@ table {
 .tp-overall-header {
 	position: relative;
 	width: 100% auto;
-	height: 50vh;
 	background-color: #101010;
 	background: url(../img/ohbg.png);
 	background-attachment: fixed;

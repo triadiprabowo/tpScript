@@ -41,8 +41,10 @@
 		</script>
 	</head>
 
-	<body ng-controller="globalCtrl">	
-		<!-- NgView -->
-		<div ng-view></div>
+	<body ng-controller="globalCtrl">
+		<section class="tp-preload" style="display: none;">	
+			<!-- NgView -->
+			<div ng-view></div>
+		</section>
 	</body>
 </html>

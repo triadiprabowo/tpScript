@@ -1,6 +1,8 @@
 $(window).load(function() {
-	$('.tp-preload').fadeIn("slow");
-	$('.tp-preload-pos').remove();
+	setTimeout(function() {		
+		$('.tp-preload').fadeIn("slow");
+		$('.tp-preload-pos').remove();
+	}, 1000);
 });
 
 // Main Configuration of tpScript

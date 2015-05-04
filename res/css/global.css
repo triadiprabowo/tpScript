@@ -248,6 +248,20 @@ table {
 	margin-top: 15px;
 }
 
+/* Pre-Load */
+.tp-preload-pos {
+	position: absolute;
+	top: 35vh;
+	left: 50vw;
+	margin-left: -80px;
+	text-align: center;
+}
+
+.tp-preload-pos p {
+	display: block;
+	margin-bottom: 1em;
+}
+
 /* Font Awesome Icon */
 .tp-icon {
 	font-family: 'FontAwesome';	

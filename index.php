@@ -42,6 +42,7 @@
 	</head>
 
 	<body ng-controller="globalCtrl">
+		<div class="tp-preload-pos"><p>Loading</p><img src="res/img/preload.gif" /></div>
 		<section class="tp-preload" style="display: none;">	
 			<!-- NgView -->
 			<div ng-view></div>

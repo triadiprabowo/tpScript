@@ -26,6 +26,7 @@ body {
 	height: 100%;
 }
 
+/* Scrollbar styling */
 ::-webkit-scrollbar {
     width: 13px;
 }
@@ -40,6 +41,10 @@ body {
     -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.5); 
     background: #333;
 }
+
+/* Text Selection Styling */
+::-moz-selection { background: #005B5A; }
+::selection { background: #005B5A; }
 
 /* Hyperlink styling */
 a {
@@ -103,6 +108,10 @@ h6 {
 	font-weight: 400;
 	font-size: 1.55em;
 	color: #555;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	text-shadow: 1px 3px 1px rgba(0,0,0,.5);
 }
 
 h1 > a:link, h2 > a:link, h3 > a:link, h4 > a:link, h5 > a:link, h6 > a:link {
@@ -534,7 +543,8 @@ table {
 	position: relative;
 	display: block;
 	bottom: 0;
-	margin-left: 50%;
+	left: 50%;
+	margin-left: -5%;
 	line-height: 1em;
 	padding: 1em 0;
 	z-index: 1;

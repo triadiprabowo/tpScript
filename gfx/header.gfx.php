@@ -20,7 +20,10 @@
 			{"src":"res/img/album/9.jpg"},
 			{"src":"res/img/album/10.jpg"},
 			{"src":"res/img/album/11.jpg"},
-			{"src":"res/img/album/12.jpg"}
+			{"src":"res/img/album/12.jpg"},
+			{"src":"res/img/album/13.jpg"},
+			{"src":"res/img/album/14.jpg"},
+			{"src":"res/img/album/15.jpg"}
 		];
 
 		function shuffleArray(array) {

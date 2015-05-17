@@ -297,8 +297,8 @@ table {
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 	  
-	-webkit-transition: 300ms ease all;
-	transition: 300ms ease all;
+	-webkit-transition: 0.3s ease all;
+	transition: 0.3s ease all;
 	 
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;

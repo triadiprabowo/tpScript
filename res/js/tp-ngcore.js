@@ -41,10 +41,7 @@ tpApp.config(function($routeProvider, $locationProvider) {
 tpApp.run(['$location', '$rootScope', function($location, $rootScope) {
     $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
         $rootScope.title = current.$$route.title;
-    });
-
-    $rootScope.$on('$routeChangeStart', function(next, current) { 
-	   		$('.tp-preload').toggleClass('show-nav');
-	   		$('.tp-mobile-menu-wrapper').hide("slide", {direction: 'left'}, 600);
-	});
+        $('.tp-preload').removeClass('show-nav');
+	   	$('.tp-mobile-menu-wrapper').hide("slide", {direction: 'left'}, 600);
+    });    
 }]);

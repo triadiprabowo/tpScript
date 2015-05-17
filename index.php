@@ -46,7 +46,7 @@
 		<!-- Include mobile menu -->
 		<?php include('sys/partials/mobile-menu.php') ?>
 
-		<section class="tp-preload" style="display: none;">
+		<section class="tp-preload">
 			<!-- Mobile Toggle -->
 			<div class="tp-mobile-menu-toggle-wrapper">
 				<div class="tp-mobile-menu-toggle hvr-buzz"><span class="tp-icon fa-th-large"></span></div>

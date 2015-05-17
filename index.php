@@ -42,10 +42,21 @@
 	</head>
 
 	<body ng-controller="globalCtrl">
-		<div class="tp-preload-pos"><p>Loading</p><img src="res/img/preload.gif" /></div>
-		<section class="tp-preload" style="display: none;">	
-			<!-- NgView -->
-			<div ng-view></div>
+		<div class="tp-preload-pos"><p>Loading</p><img src="res/img/preload.gif" /></div>		
+		<!-- Include mobile menu -->
+		<?php include('sys/partials/mobile-menu.php') ?>
+
+		<section class="tp-preload" style="display: none;">
+			<!-- Mobile Toggle -->
+			<div class="tp-mobile-menu-toggle-wrapper">
+				<div class="tp-mobile-menu-toggle hvr-buzz"><span class="tp-icon fa-th-large"></span></div>
+			</div>
+			<!-- End Toggle -->	
+
+			<section class="tp-preload-canvas">
+				<!-- NgView -->
+				<div ng-view></div>
+			</section>
 		</section>
 	</body>
 </html>

@@ -12,7 +12,16 @@ $(document).ready(function() {
 	// Basic Required Method
 	tpSlider();
 	tpBackTop();
-	
+
+
+	var counter = 1;
+	// Toggle Nav on Click
+    $('.tp-mobile-menu-toggle').click(function() { 
+    	// Calling a function in case you want to expand upon this.        	        
+	    tpToggleMenu();	
+	    $('.tp-mobile-menu-wrapper').toggle("slide", {direction: 'left'}, 600);
+    });
+
 	/*$('.tp-blocks-description a').click(function() {
 		$('html body').animate({
 			scrollTop: $('#aboutme').offset().top
@@ -200,4 +209,14 @@ $(document).ready(function() {
 			}, 1000);
 		}
 	});
+
+	/* 
+	** tpMobileMenu.js
+	** Version 1.0 - Init Build
+	** Mobile menu toggle
+	*/
+	function tpToggleMenu() {
+	    $('.tp-preload').toggleClass('show-nav');
+	}
+
 });

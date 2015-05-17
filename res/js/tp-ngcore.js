@@ -23,6 +23,10 @@ tpApp.config(function($routeProvider, $locationProvider) {
 		templateUrl: 'sys/tpl/portfolio.tpl.php',
 		title: 'triadiprabowo.com | Portfolio'
 	}).
+	when('/resume', {
+		templateUrl: 'sys/tpl/resume.tpl.php',
+		title: 'triadiprabowo.com | Resume'
+	}).
 	when('/404', {
 		templateUrl: '404.php',
 		title: 'Whoops! Page Not Found'

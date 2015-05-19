@@ -1250,7 +1250,7 @@ textarea.nobg:focus, .tp-txtarea.nobg:focus {
 
 .tp-mobile-menu-toggle-wrapper {
 	position: relative;
-	display: block;		
+	display: none;		
 	top: 0;
 	left: 300px;
 	z-index: 41;
@@ -1320,5 +1320,9 @@ textarea.nobg:focus, .tp-txtarea.nobg:focus {
 	.imgnormal {
 		right: 0;
 		text-align: center;
+	}
+
+	.tp-mobile-menu-toggle-wrapper {
+		display: block;
 	}
 }

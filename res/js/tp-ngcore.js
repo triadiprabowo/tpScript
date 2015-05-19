@@ -5,7 +5,7 @@
 ** Released on triadiprabowo.com
 */
 
-var tpApp = angular.module('tp', ['ngRoute','ngDialog']);
+var tpApp = angular.module('tp', ['ngRoute','ngDialog', 'ngAnimate']);
 
 tpApp.config(function($routeProvider, $locationProvider) {
 	$locationProvider.html5Mode(true);
@@ -40,8 +40,6 @@ tpApp.config(function($routeProvider, $locationProvider) {
 
 tpApp.run(['$location', '$rootScope', function($location, $rootScope) {
     $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
-        $rootScope.title = current.$$route.title;
-        $('.tp-preload').removeClass('show-nav');
-	   	$('.tp-mobile-menu-wrapper').hide("slide", {direction: 'left'}, 600);
+        $rootScope.title = current.$$route.title;	   	
     });    
 }]);

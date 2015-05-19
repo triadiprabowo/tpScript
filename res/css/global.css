@@ -1193,7 +1193,7 @@ textarea.nobg:focus, .tp-txtarea.nobg:focus {
 	width: 300px;
 	height: 100%;
 	position: fixed;
-	display: none;	
+	display: block;	
 	z-index: 40;
 	top: 0;
 	background: #111;

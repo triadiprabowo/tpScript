@@ -13,15 +13,6 @@ $(document).ready(function() {
 	tpSlider();
 	tpBackTop();
 
-
-	var counter = 1;
-	// Toggle Nav on Click
-    $('.tp-mobile-menu-toggle').click(function() { 
-    	// Calling a function in case you want to expand upon this.    	
-	    $('.tp-mobile-menu-wrapper').toggle("slide", {direction: 'left'}, 600);        
-	    tpToggleMenu();
-    });
-
 	/*$('.tp-blocks-description a').click(function() {
 		$('html body').animate({
 			scrollTop: $('#aboutme').offset().top

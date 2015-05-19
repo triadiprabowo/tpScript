@@ -1,5 +1,5 @@
 <!-- Mobile Menu -->
-<section class="tp-mobile-menu-wrapper">
+<section class="tp-mobile-menu-wrapper" ng-animate ng-show="showMobileMenu">
 	<section class="tp-mobile-menu">
 		<h1 class="title">triadiprabowo.com</h1>
 		<ul>

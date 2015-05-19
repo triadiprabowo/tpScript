@@ -11,6 +11,17 @@
 
 tpApp.controller('globalCtrl', function($scope, $http, ngDialog) {
 	/*
+	** AngularJS tpToggleMobileMenu
+	** Dependency: $scope & jQLite/jQuery
+	*/
+	$scope.tpToggleMenu = function() {
+		$scope.showMobileMenu = !$scope.showMobileMenu;
+		$scope.isActive = !$scope.isActive;
+
+		console.log($scope.isActive, $scope.showMobileMenu);
+	}
+
+	/*
 	** Function: Modal contact form
 	** Dependency: ngDialog
 	** Run when user click 'contact' menu

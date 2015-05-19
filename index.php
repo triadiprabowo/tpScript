@@ -26,6 +26,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 		<script src="res/js/angular.min.js"></script>
 		<script src="res/js/angular-route.min.js"></script>
+		<script src="res/js/angular-animate.min.js"></script>
 		<script src="res/js/ngDialog.js"></script>
 		<script src="res/js/tp-ngcore.js"></script>
 		<script src="res/js/tp-controller.js"></script>
@@ -41,15 +42,15 @@
 		</script>
 	</head>
 
-	<body ng-controller="globalCtrl">
+	<body ng-controller="globalCtrl" ng-init="isActive=false">
 		<div class="tp-preload-pos"><p>Loading</p><img src="res/img/preload.gif" /></div>		
 		<!-- Include mobile menu -->
 		<?php include('sys/partials/mobile-menu.php') ?>
 
-		<section class="tp-preload">
+		<section class="tp-preload" ng-class="{'show-nav': isActive}">
 			<!-- Mobile Toggle -->
 			<div class="tp-mobile-menu-toggle-wrapper">
-				<div class="tp-mobile-menu-toggle hvr-buzz"><span class="tp-icon fa-th-large"></span></div>
+				<div class="tp-mobile-menu-toggle hvr-buzz" ng-click="tpToggleMenu();"><span class="tp-icon fa-th-large"></span></div>
 			</div>
 			<!-- End Toggle -->	
 
